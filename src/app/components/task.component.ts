@@ -20,6 +20,7 @@ import { Task } from '../models/task.model';
          [value]="task?.title"
          readonly="true"
          placeholder="Input title"
+         style="background: sky blue;"
        />
      </div>
      <div class="actions">
