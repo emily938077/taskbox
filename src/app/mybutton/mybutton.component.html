@@ -1,0 +1,14 @@
+<p> {{ label }}</p>
+<button
+  #b1
+  data-testid="b1"
+  type="button"
+  (dblclick)="onDblClick('state change')"
+  (click)="onCliick(b1.type)"
+  [ngClass]="classes"
+  [ngStyle]="{ 'background-color': backgroundColor }"
+  [disabled]="disable"
+>
+  {{ label }}
+</button>
+<!-- action顯示的是執行的方法名  因此點一次  action會出現onCliick的資料 -->

@@ -2,6 +2,192 @@
     "pipes": [],
     "interfaces": [
         {
+            "name": "Icon",
+            "id": "interface-Icon-2915efb68489e8d9ec9ff29f72db7fa93451a7ab05b0fa1c184d0b2f5f587e96cafa666ab14724f093cb4f482b4310696b2687e89e4071f4231fe165242de345",
+            "file": "src/app/models/icon.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export type LabelType = 'activate' | 'deactivate' | 'default' | 'nostyle' | 'setting';\r\nexport interface Label {\r\n    type: LabelType;\r\n    text: string;\r\n    subtext?: string;\r\n    id?: string;\r\n    value?: any;\r\n}\r\n\r\nexport interface Icon {\r\n  src?: string;\r\n  presets: string;\r\n  labels?: Label[];\r\n  numberVisibleChips?: number;\r\n  state: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "labels",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Label[]",
+                    "optional": true,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "numberVisibleChips",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": true,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "presets",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 12
+                },
+                {
+                    "name": "src",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "state",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "Label",
+            "id": "interface-Label-2915efb68489e8d9ec9ff29f72db7fa93451a7ab05b0fa1c184d0b2f5f587e96cafa666ab14724f093cb4f482b4310696b2687e89e4071f4231fe165242de345",
+            "file": "src/app/models/icon.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export type LabelType = 'activate' | 'deactivate' | 'default' | 'nostyle' | 'setting';\r\nexport interface Label {\r\n    type: LabelType;\r\n    text: string;\r\n    subtext?: string;\r\n    id?: string;\r\n    value?: any;\r\n}\r\n\r\nexport interface Icon {\r\n  src?: string;\r\n  presets: string;\r\n  labels?: Label[];\r\n  numberVisibleChips?: number;\r\n  state: string;\r\n}\r\n",
+            "properties": [
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "subtext",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "text",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "type",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "LabelType",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "value",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": true,
+                    "description": "",
+                    "line": 7
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
+            "name": "myButton",
+            "id": "interface-myButton-5200b909b276a20f9a53cee8473deec3ddc6a2e3f6ffe57d75874010898d3d4abb1f9ad5fae4477929e5d8831a202299d5a88d3905c634a1462886405676a02e",
+            "file": "src/app/mybutton/mybutton.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface myButton {\r\n  id: string;\r\n  label: string;\r\n  primary: boolean;\r\n  backgroundColor?: string;\r\n  size: 'small' | 'medium' | 'large';\r\n  disable: boolean;\r\n}\r\n\r\n",
+            "properties": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "disable",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 7
+                },
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "label",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "primary",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 165,
+            "methods": []
+        },
+        {
             "name": "Task",
             "id": "interface-Task-d4d37e919bf153b85cd73cf76b3d81234228b20ae5a9a500ccf0118c584fdae333a8448d8becdbaa20c0fdaf47fd111516c76691ee76980e2a62f442b656bd75",
             "file": "src/app/models/task.model.ts",
@@ -49,12 +235,12 @@
     "classes": [
         {
             "name": "AppError",
-            "id": "class-AppError-95684bab10167316382fdf12e0d677ebc7eeafbce335c6797fac5521d3a065f9786d9d0e5ffdca302f8780fce704af181cea9a6ba9a3cd93d6e409a7c928f2fe",
+            "id": "class-AppError-e19a8adf2da8a8e73f0a1d3788b8742edc395224bff19ed0dd4ef1c33243e235861b85ba6b6d8d5f1f7dff764378aee77f4a199f794958c2fef0cf129d6c1d35",
             "file": "src/app/state/task.state.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "class",
-            "sourceCode": "import { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR'\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = {\r\n  1: { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  2: { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  3: { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  4: { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n};\r\n\r\nexport class TaskStateModel {\r\n  entities: { [id: number]: Task };\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'tasks',\r\n  defaults: {\r\n    entities: defaultTasks,\r\n    error: false,\r\n  },\r\n})\r\nexport class TasksState {\r\n  // get state change -> @Selector\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel) {\r\n    const entities = state.entities;\r\n    return Object.keys(entities).map(id => entities[+id]);\r\n  }\r\n\r\n  @Selector()\r\n  static getError(state: TaskStateModel) {\r\n    const { error } = state;\r\n    return error;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: PinTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_PINNED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: ArchiveTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_ARCHIVED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  @Action(AppError)\r\n  setAppError({ patchState, getState }: StateContext<TaskStateModel>, { payload }: AppError) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
+            "sourceCode": "import { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR'\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = {\r\n  1: { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  2: { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  3: { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  4: { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n};\r\n\r\nexport class TaskStateModel {\r\n  entities: { [id: number]: Task };\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'tasks',\r\n  defaults: {\r\n    entities: defaultTasks,\r\n    error: false,\r\n  },\r\n})\r\nexport class TasksState {\r\n  // get state change -> @Selector\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel) {\r\n    const entities = state.entities;\r\n    return Object.keys(entities).map(id => entities[+id]);\r\n  }\r\n\r\n  @Selector()\r\n  static getError(state: TaskStateModel) {\r\n    const { error } = state;\r\n    return error;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: PinTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_PINNED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: ArchiveTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_ARCHIVED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  @Action(AppError)\r\n  setAppError({ patchState, getState }: StateContext<TaskStateModel>, { payload }: AppError) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
@@ -118,12 +304,12 @@
         },
         {
             "name": "ArchiveTask",
-            "id": "class-ArchiveTask-95684bab10167316382fdf12e0d677ebc7eeafbce335c6797fac5521d3a065f9786d9d0e5ffdca302f8780fce704af181cea9a6ba9a3cd93d6e409a7c928f2fe",
+            "id": "class-ArchiveTask-e19a8adf2da8a8e73f0a1d3788b8742edc395224bff19ed0dd4ef1c33243e235861b85ba6b6d8d5f1f7dff764378aee77f4a199f794958c2fef0cf129d6c1d35",
             "file": "src/app/state/task.state.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "class",
-            "sourceCode": "import { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR'\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = {\r\n  1: { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  2: { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  3: { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  4: { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n};\r\n\r\nexport class TaskStateModel {\r\n  entities: { [id: number]: Task };\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'tasks',\r\n  defaults: {\r\n    entities: defaultTasks,\r\n    error: false,\r\n  },\r\n})\r\nexport class TasksState {\r\n  // get state change -> @Selector\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel) {\r\n    const entities = state.entities;\r\n    return Object.keys(entities).map(id => entities[+id]);\r\n  }\r\n\r\n  @Selector()\r\n  static getError(state: TaskStateModel) {\r\n    const { error } = state;\r\n    return error;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: PinTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_PINNED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: ArchiveTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_ARCHIVED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  @Action(AppError)\r\n  setAppError({ patchState, getState }: StateContext<TaskStateModel>, { payload }: AppError) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
+            "sourceCode": "import { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR'\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = {\r\n  1: { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  2: { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  3: { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  4: { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n};\r\n\r\nexport class TaskStateModel {\r\n  entities: { [id: number]: Task };\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'tasks',\r\n  defaults: {\r\n    entities: defaultTasks,\r\n    error: false,\r\n  },\r\n})\r\nexport class TasksState {\r\n  // get state change -> @Selector\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel) {\r\n    const entities = state.entities;\r\n    return Object.keys(entities).map(id => entities[+id]);\r\n  }\r\n\r\n  @Selector()\r\n  static getError(state: TaskStateModel) {\r\n    const { error } = state;\r\n    return error;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: PinTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_PINNED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: ArchiveTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_ARCHIVED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  @Action(AppError)\r\n  setAppError({ patchState, getState }: StateContext<TaskStateModel>, { payload }: AppError) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
@@ -187,12 +373,12 @@
         },
         {
             "name": "PinTask",
-            "id": "class-PinTask-95684bab10167316382fdf12e0d677ebc7eeafbce335c6797fac5521d3a065f9786d9d0e5ffdca302f8780fce704af181cea9a6ba9a3cd93d6e409a7c928f2fe",
+            "id": "class-PinTask-e19a8adf2da8a8e73f0a1d3788b8742edc395224bff19ed0dd4ef1c33243e235861b85ba6b6d8d5f1f7dff764378aee77f4a199f794958c2fef0cf129d6c1d35",
             "file": "src/app/state/task.state.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "class",
-            "sourceCode": "import { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR'\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = {\r\n  1: { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  2: { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  3: { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  4: { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n};\r\n\r\nexport class TaskStateModel {\r\n  entities: { [id: number]: Task };\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'tasks',\r\n  defaults: {\r\n    entities: defaultTasks,\r\n    error: false,\r\n  },\r\n})\r\nexport class TasksState {\r\n  // get state change -> @Selector\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel) {\r\n    const entities = state.entities;\r\n    return Object.keys(entities).map(id => entities[+id]);\r\n  }\r\n\r\n  @Selector()\r\n  static getError(state: TaskStateModel) {\r\n    const { error } = state;\r\n    return error;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: PinTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_PINNED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: ArchiveTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_ARCHIVED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  @Action(AppError)\r\n  setAppError({ patchState, getState }: StateContext<TaskStateModel>, { payload }: AppError) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
+            "sourceCode": "import { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR'\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = {\r\n  1: { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  2: { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  3: { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  4: { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n};\r\n\r\nexport class TaskStateModel {\r\n  entities: { [id: number]: Task };\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'tasks',\r\n  defaults: {\r\n    entities: defaultTasks,\r\n    error: false,\r\n  },\r\n})\r\nexport class TasksState {\r\n  // get state change -> @Selector\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel) {\r\n    const entities = state.entities;\r\n    return Object.keys(entities).map(id => entities[+id]);\r\n  }\r\n\r\n  @Selector()\r\n  static getError(state: TaskStateModel) {\r\n    const { error } = state;\r\n    return error;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: PinTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_PINNED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: ArchiveTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_ARCHIVED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  @Action(AppError)\r\n  setAppError({ patchState, getState }: StateContext<TaskStateModel>, { payload }: AppError) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
             "constructorObj": {
                 "name": "constructor",
                 "description": "",
@@ -256,12 +442,12 @@
         },
         {
             "name": "TasksState",
-            "id": "class-TasksState-95684bab10167316382fdf12e0d677ebc7eeafbce335c6797fac5521d3a065f9786d9d0e5ffdca302f8780fce704af181cea9a6ba9a3cd93d6e409a7c928f2fe",
+            "id": "class-TasksState-e19a8adf2da8a8e73f0a1d3788b8742edc395224bff19ed0dd4ef1c33243e235861b85ba6b6d8d5f1f7dff764378aee77f4a199f794958c2fef0cf129d6c1d35",
             "file": "src/app/state/task.state.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "class",
-            "sourceCode": "import { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR'\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = {\r\n  1: { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  2: { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  3: { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  4: { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n};\r\n\r\nexport class TaskStateModel {\r\n  entities: { [id: number]: Task };\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'tasks',\r\n  defaults: {\r\n    entities: defaultTasks,\r\n    error: false,\r\n  },\r\n})\r\nexport class TasksState {\r\n  // get state change -> @Selector\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel) {\r\n    const entities = state.entities;\r\n    return Object.keys(entities).map(id => entities[+id]);\r\n  }\r\n\r\n  @Selector()\r\n  static getError(state: TaskStateModel) {\r\n    const { error } = state;\r\n    return error;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: PinTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_PINNED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: ArchiveTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_ARCHIVED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  @Action(AppError)\r\n  setAppError({ patchState, getState }: StateContext<TaskStateModel>, { payload }: AppError) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
+            "sourceCode": "import { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR'\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = {\r\n  1: { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  2: { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  3: { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  4: { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n};\r\n\r\nexport class TaskStateModel {\r\n  entities: { [id: number]: Task };\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'tasks',\r\n  defaults: {\r\n    entities: defaultTasks,\r\n    error: false,\r\n  },\r\n})\r\nexport class TasksState {\r\n  // get state change -> @Selector\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel) {\r\n    const entities = state.entities;\r\n    return Object.keys(entities).map(id => entities[+id]);\r\n  }\r\n\r\n  @Selector()\r\n  static getError(state: TaskStateModel) {\r\n    const { error } = state;\r\n    return error;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: PinTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_PINNED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: ArchiveTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_ARCHIVED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  @Action(AppError)\r\n  setAppError({ patchState, getState }: StateContext<TaskStateModel>, { payload }: AppError) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
             "properties": [],
             "rawdescription": "\n",
             "methods": [
@@ -282,7 +468,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 81,
+                    "line": 82,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "decorators": [
@@ -446,7 +632,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 95,
+                    "line": 96,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "decorators": [
@@ -479,12 +665,12 @@
         },
         {
             "name": "TaskStateModel",
-            "id": "class-TaskStateModel-95684bab10167316382fdf12e0d677ebc7eeafbce335c6797fac5521d3a065f9786d9d0e5ffdca302f8780fce704af181cea9a6ba9a3cd93d6e409a7c928f2fe",
+            "id": "class-TaskStateModel-e19a8adf2da8a8e73f0a1d3788b8742edc395224bff19ed0dd4ef1c33243e235861b85ba6b6d8d5f1f7dff764378aee77f4a199f794958c2fef0cf129d6c1d35",
             "file": "src/app/state/task.state.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "class",
-            "sourceCode": "import { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR'\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = {\r\n  1: { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  2: { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  3: { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  4: { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n};\r\n\r\nexport class TaskStateModel {\r\n  entities: { [id: number]: Task };\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'tasks',\r\n  defaults: {\r\n    entities: defaultTasks,\r\n    error: false,\r\n  },\r\n})\r\nexport class TasksState {\r\n  // get state change -> @Selector\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel) {\r\n    const entities = state.entities;\r\n    return Object.keys(entities).map(id => entities[+id]);\r\n  }\r\n\r\n  @Selector()\r\n  static getError(state: TaskStateModel) {\r\n    const { error } = state;\r\n    return error;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: PinTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_PINNED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: ArchiveTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_ARCHIVED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  @Action(AppError)\r\n  setAppError({ patchState, getState }: StateContext<TaskStateModel>, { payload }: AppError) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
+            "sourceCode": "import { State, Selector, Action, StateContext } from '@ngxs/store';\r\nimport { Task } from '../models/task.model';\r\n\r\n// Defines the actions available to the app\r\nexport const actions = {\r\n  ARCHIVE_TASK: 'ARCHIVE_TASK',\r\n  PIN_TASK: 'PIN_TASK',\r\n  ERROR: 'APP_ERROR'\r\n};\r\n\r\nexport class ArchiveTask {\r\n  static readonly type = actions.ARCHIVE_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\nexport class PinTask {\r\n  static readonly type = actions.PIN_TASK;\r\n\r\n  constructor(public payload: string) {}\r\n}\r\n\r\n// The class definition for our error field\r\nexport class AppError {\r\n  static readonly type = actions.ERROR;\r\n  constructor(public payload: boolean) {}\r\n}\r\n\r\n// The initial state of our store when the app loads.\r\n// Usually you would fetch this from a server\r\nconst defaultTasks = {\r\n  1: { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  2: { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  3: { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  4: { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n};\r\n\r\nexport class TaskStateModel {\r\n  entities: { [id: number]: Task };\r\n  error: boolean;\r\n}\r\n\r\n// Sets the default state\r\n@State<TaskStateModel>({\r\n  name: 'tasks',\r\n  defaults: {\r\n    entities: defaultTasks,\r\n    error: false,\r\n  },\r\n})\r\nexport class TasksState {\r\n  // get state change -> @Selector\r\n  @Selector()\r\n  static getAllTasks(state: TaskStateModel) {\r\n    const entities = state.entities;\r\n    return Object.keys(entities).map(id => entities[+id]);\r\n  }\r\n\r\n  @Selector()\r\n  static getError(state: TaskStateModel) {\r\n    const { error } = state;\r\n    return error;\r\n  }\r\n\r\n  // Triggers the PinTask action, similar to redux\r\n  @Action(PinTask)\r\n  pinTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: PinTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_PINNED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  // Triggers the archiveTask action, similar to redux\r\n  @Action(ArchiveTask)\r\n  archiveTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: ArchiveTask) {\r\n    const state = getState().entities;\r\n\r\n    const entities = {\r\n      ...state,\r\n      [payload]: { ...state[payload], state: 'TASK_ARCHIVED' },\r\n    };\r\n\r\n    patchState({\r\n      entities,\r\n    });\r\n  }\r\n\r\n  @Action(AppError)\r\n  setAppError({ patchState, getState }: StateContext<TaskStateModel>, { payload }: AppError) {\r\n    const state = getState();\r\n    patchState({\r\n      error: !state.error,\r\n    });\r\n  }\r\n}\r\n",
             "properties": [
                 {
                     "name": "entities",
@@ -682,6 +868,146 @@
             }
         },
         {
+            "name": "ButtonGroupComponent",
+            "id": "component-ButtonGroupComponent-791b86340c4efe87eeecd196d35c37e7a4e569de1e0f7f65e396edd9c760638b9114c1c492d021fc5c98da06ab61b18cd715dfb1060b503971b2782a87a27efe",
+            "file": "src/app/button-group/button-group.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button-group",
+            "styleUrls": [
+                "./button-group.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button-group.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label2",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "size1",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                },
+                {
+                    "name": "size2",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onChange",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "primary",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onClean",
+                    "args": [
+                        {
+                            "name": "input",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "input",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'app-button-group',\r\n  templateUrl: './button-group.component.html',\r\n  styleUrls: ['./button-group.component.css']\r\n})\r\nexport class ButtonGroupComponent {\r\n\r\n  constructor() { }\r\n\r\n  @Input() label1?: string;\r\n  @Input() label2?: string;\r\n  @Input() size1: 'small' | 'medium' | 'large' = 'medium';\r\n  @Input() size2: 'small' | 'medium' | 'large' = 'medium';\r\n  @Input() backgroundColor?: string;\r\n  primary = true;\r\n  @Output() onChange = new EventEmitter<Event>();\r\n  onClean(input: any){\r\n    input.value = \"\";\r\n    // const state = btother.disable ? 'disable' : 'able';\r\n    // console.log(btother+state);\r\n    this.onChange.emit();\r\n  }\r\n  // onChangePmr(bt: any){\r\n  //   this.primary = !this.primary;\r\n  //   // console.log(bt+'disable');\r\n  //   this.onChange.emit(bt.label);\r\n  // }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./button-group.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "templateData": "<input #inputbox data-testid = \"email\" value = \"write the email\" placeholder = 'qqq@mail.com'>\r\n<app-button\r\n  #button1\r\n  data-testid = \"button1\"\r\n  (onClick)=\"onClean(inputbox)\"\r\n  [size]=\"size1\"\r\n  [label]=\"label1\"\r\n  >\r\n</app-button>\r\n<app-button\r\n  #button2\r\n  data-testid = \"button2\"\r\n  (onClick)=\"onClean(inputbox.value)\"\r\n  [size]=\"size2\"\r\n  [primary]=\"primary\"\r\n  [label]=\"label2\"\r\n  >\r\n</app-button>\r\n"
+        },
+        {
             "name": "HeaderComponent",
             "id": "component-HeaderComponent-393fae8912baaac268470af3a122c996d8de1708aee18757e7516e4faf4e027f628101639f30c1c427d0b09d7ebd94651649095d996ee5a5881da569e7c8d703",
             "file": "src/stories/header.component.ts",
@@ -800,6 +1126,342 @@
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
+        },
+        {
+            "name": "myButtonComponent",
+            "id": "component-myButtonComponent-ea8350275779559a2dc02f5d760d404e51e30d78c5e6a8b872402869d807d31e5a7d87dab78b4b972d4985c815fd645cb8653947b094727d3d1a09db1afae2f2",
+            "file": "src/app/mybutton/mybutton.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-button",
+            "styleUrls": [
+                "./mybutton.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./mybutton.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "disable",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "any",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onDoubleClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "onCliick",
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 29,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "id",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onDblClick",
+                    "args": [
+                        {
+                            "name": "id",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 45,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "id",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';\r\nimport { stringify } from 'querystring';\r\n\r\n@Component({\r\n  selector: 'app-button',\r\n  templateUrl: './mybutton.component.html',\r\n  styleUrls: ['./mybutton.component.css']\r\n})\r\nexport class myButtonComponent {\r\n\r\n  @Input() primary = false;\r\n  @Input() backgroundColor?: string;\r\n  @Input() size: 'small' | 'medium' | 'large' = 'medium';\r\n  @Input() label: any = 'button';\r\n  @Input() disable = false;\r\n\r\n  @Output() onDoubleClick = new EventEmitter<Event>();\r\n  @Output() onClick = new EventEmitter<Event>();\r\n\r\n  constructor() { }\r\n\r\n  public get classes(): string[] {\r\n    // 多個css設定可以疊加\r\n    const mode = this.primary ? 'primary' : 'secondary';\r\n    const able = this.disable ? 'disable' : '';\r\n    return ['storybook-button', mode, this.size, able]\r\n  }\r\n\r\n  onCliick(id:any){\r\n    this.onClick.emit(id);\r\n    switch(this.size){\r\n      case 'small':\r\n        this.size = 'medium';\r\n        break;\r\n      case 'medium':\r\n        this.size = 'large';\r\n        break;\r\n      case 'large':\r\n        this.size = 'small';\r\n        break;\r\n    }\r\n    console.log('press');\r\n  }\r\n\r\n  onDblClick(id:any){\r\n    // this.disable = !this.disable;\r\n    this.primary = !this.primary;\r\n    this.onDoubleClick.emit(id);\r\n  }\r\n}\r\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\r\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  font-weight: 700;\r\n  border: 0;\r\n  border-radius: 3em;\r\n  cursor: pointer;\r\n  display: inline-block;\r\n  line-height: 1;\r\n}\r\n.storybook-button:active {\r\n  /* :active是滑鼠點擊元素的狀態 */\r\n  transform: scale(1);\r\n  box-shadow: inset 0 0 10px 1px #00000033;\r\n  opacity: 0.6;\r\n}\r\n.primary {\r\n  color: white;\r\n  background-color: #1ea7fd;\r\n}\r\n.secondary {\r\n  color: #333;\r\n  background-color: #eeaca3;\r\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\r\n}\r\n.small {\r\n  font-size: 12px;\r\n  padding: 10px 16px;\r\n}\r\n.medium {\r\n  font-size: 14px;\r\n  padding: 11px 20px;\r\n}\r\n.large {\r\n  font-size: 16px;\r\n  padding: 12px 24px;\r\n}\r\n.disable {\r\n  background-color: #cccccc;\r\n  color: #666666;\r\n}\r\n",
+                    "styleUrl": "./mybutton.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 18
+            },
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 22
+                    }
+                }
+            },
+            "templateData": "<p> {{ label }}</p>\r\n<button\r\n  #b1\r\n  data-testid=\"b1\"\r\n  type=\"button\"\r\n  (dblclick)=\"onDblClick('state change')\"\r\n  (click)=\"onCliick(b1.type)\"\r\n  [ngClass]=\"classes\"\r\n  [ngStyle]=\"{ 'background-color': backgroundColor }\"\r\n  [disabled]=\"disable\"\r\n>\r\n  {{ label }}\r\n</button>\r\n<!-- action顯示的是執行的方法名  因此點一次  action會出現onCliick的資料 -->\r\n"
+        },
+        {
+            "name": "NebulaIconComponent",
+            "id": "component-NebulaIconComponent-0a16239f4e6e7c0e25981e67f6463d8af80fc8da2e79dd4a2a1a218316c5bb0d6177f39c150b0bd9abc4c2716ce551c310c8a4b3c31e20ac2d16f44ac268d145",
+            "file": "src/app/icon/icon.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "nui-icon",
+            "styleUrls": [
+                "./icon.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./icon.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "icon",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 32,
+                    "type": "Icon",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "badge",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 34
+                },
+                {
+                    "name": "classes",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 35
+                },
+                {
+                    "name": "iconItem",
+                    "defaultValue": "ShowMore",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "optional": false,
+                    "description": "",
+                    "line": 38
+                },
+                {
+                    "name": "showAll",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 37
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "isHideItem",
+                    "args": [
+                        {
+                            "name": "index",
+                            "type": "",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "boolean",
+                    "typeParameters": [],
+                    "line": 59,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "index",
+                            "type": "",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 40,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "switchIconItem",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "MouseEvent",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 52,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "MouseEvent",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {Component, OnInit, Input} from '@angular/core';\nimport { Icon } from '../models/icon.model';\n\nconst IconPresets = new Set(['premium', 'beta', 'new', 'text-label']);  //presets\nexport const ShowMore = {\n    src: '../../assets/icon/next.svg',\n    text: 'more',\n};\nexport const ShowLess = {\n    src: '../../assets/icon/previous.svg',\n    text: 'hide',\n};\n\n// export type LabelType = 'activate' | 'deactivate' | 'default' | 'nostyle' | 'setting';\n// export interface Label {\n//     type: LabelType;\n//     text: string;\n//     subtext?: string;\n//     id?: string;\n//     value?: any;\n// }\n@Component({\n    selector: 'nui-icon',\n    templateUrl: './icon.component.html',\n    styleUrls: ['./icon.component.scss'],\n})\nexport class NebulaIconComponent implements OnInit {\n    // @Input() src?: string;\n    // @Input() presets: string;\n    // @Input() labels?: Label[];\n    // @Input() numberVisibleChips?: number;\n    @Input() icon: Icon;\n\n    badge: string;\n    classes: string[];\n\n    showAll: boolean = false;\n    iconItem: any = ShowMore;\n\n    ngOnInit() {\n        this.classes = [];\n        if (this.icon.presets) {\n            this.classes = this.icon.presets.split(' ').filter((x) => x.length);\n        }\n        const badgeName = this.classes.filter((x) => IconPresets.has(x));\n        if (badgeName.length) {\n            this.badge = badgeName[0];\n            this.icon.src = null;\n        }\n    }\n\n    switchIconItem(event: MouseEvent): void {\n        event.stopPropagation();\n\n        this.showAll = !this.showAll;\n        this.iconItem = this.showAll ? ShowLess : ShowMore;\n    }\n\n    isHideItem(index): boolean {\n        return this.icon.numberVisibleChips && !this.showAll && index >= this.icon.numberVisibleChips;\n    }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "\r\n\r\n$activate-color: #508b0d;\r\n$deactivate-color: #ee4540;\r\n$new-color: #ff8900;\r\n$premium-color: #999999;\r\n$beta-color: #508b0d;\r\n$default-color: #777777;\r\n\r\n$basic-size: 1rem;\r\n\r\n.nui-icon {\r\n    position: relative;\r\n    display: inline-block;\r\n    margin: 0 0.25rem;\r\n\r\n    .icon-labels {\r\n        .hide {\r\n            display: none;\r\n        }\r\n\r\n        .display-text {\r\n            color: $default-color;\r\n\r\n            &:hover {\r\n                text-decoration: underline;\r\n            }\r\n        }\r\n\r\n        .icon-item {\r\n            overflow: hidden;\r\n            height: 1rem;\r\n\r\n            img {\r\n                vertical-align: middle;\r\n                width: 0.75rem;\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\n.small {\r\n    .icon-img {\r\n        width: $basic-size * 1;\r\n    }\r\n\r\n    .icon-badge {\r\n        font-size: $basic-size * 1;\r\n    }\r\n}\r\n\r\n.middle {\r\n    .icon-img {\r\n        width: $basic-size * 2;\r\n    }\r\n\r\n    .icon-badge {\r\n        font-size: $basic-size * 2;\r\n    }\r\n}\r\n\r\n.large {\r\n    .icon-img {\r\n        width: $basic-size * 4;\r\n    }\r\n\r\n    .icon-badge {\r\n        font-size: $basic-size * 4;\r\n    }\r\n}\r\n",
+                    "styleUrl": "./icon.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div>work!</div>\r\n<div class=\"nui-icon\" [ngClass]=\"classes\" [ngSwitch]=\"badge\">\r\n    <div *ngSwitchCase=\"'premium'\" class=\"icon-badge {{ badge }}\">Pro</div>\r\n    <div *ngSwitchCase=\"'new'\" class=\"icon-badge {{ badge }}\">new</div>\r\n    <div *ngSwitchCase=\"'beta'\" class=\"icon-badge {{ badge }}\">BETA</div>\r\n    <ng-container *ngSwitchCase=\"'text-label'\">\r\n        <div class=\"icon-labels\">\r\n            <ng-container *ngFor=\"let element of labels; let index = index\">\r\n                <div\r\n                    *ngIf=\"element.text\"\r\n                    class=\"icon-badge {{ badge }} text {{ isHideItem(index) ? 'hide' : '' }}\"\r\n                    [ngClass]=\"{\r\n                        activate: element.type === 'activate',\r\n                        deactivate: element.type === 'deactivate',\r\n                        default: element.type === 'default',\r\n                        nostyle: element.type === 'nostyle',\r\n                        setting: element.type === 'setting'\r\n                    }\"\r\n                >\r\n                    {{ element.text }} <span class=\"subtext\" *ngIf=\"element.subtext\">{{ element.subtext }}</span>\r\n                </div>\r\n            </ng-container>\r\n            <a\r\n                class=\"icon-item cursor-pointer\"\r\n                (click)=\"switchIconItem($event)\"\r\n                *ngIf=\"numberVisibleChips && numberVisibleChips < labels.length\"\r\n            >\r\n                <span class=\"display-text\">{{ iconItem.text }}&nbsp;</span><img src=\"{{ iconItem.src }}\" />\r\n            </a>\r\n        </div>\r\n    </ng-container>\r\n\r\n    <img *ngSwitchDefault class=\"icon-img\" [src]=\"src\" />\r\n</div>\r\n"
         },
         {
             "name": "PageComponent",
@@ -1032,7 +1694,7 @@
         },
         {
             "name": "TaskComponent",
-            "id": "component-TaskComponent-29177c1f9a74fb9df046927ae74e7e99a53fde9a5f57a3fd346307673d2535928fb3b0b42c954812b1146de10e62fd15760c18076c9a2f10a438f7935566a549",
+            "id": "component-TaskComponent-e6e0627d6179f95dee2d3637fa66b23624ace9be2e058a546547052d9580082f7faf344c697ddb6ac2614ffeb26a1c6fad2c3570dbb61c98a15965ac6ba46313",
             "file": "src/app/components/task.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -1042,7 +1704,7 @@
             "selector": "app-task",
             "styleUrls": [],
             "styles": [],
-            "template": "<div class=\"list-item {{ task?.state }}\">\n  <label class=\"checkbox\">\n    <input\n      type=\"checkbox\"\n      [defaultChecked]=\"task?.state === 'TASK_ARCHIVED'\"\n      disabled=\"true\"\n      name=\"checked\"\n    />\n    <span class=\"checkbox-custom\" (click)=\"onArchive(task.id)\" attr.aria-label=\"archiveTask-{{ task?.id }}\"></span>\n  </label>\n  <div class=\"title\">\n    <input\n      type=\"text\"\n      [value]=\"task?.title\"\n      readonly=\"true\"\n      placeholder=\"Input title\"\n    />\n  </div>\n  <div class=\"actions\">\n    <a *ngIf=\"task?.state !== 'TASK_ARCHIVED'\" (click)=\"onPin(task.id)\">\n      <span class=\"icon-star\" attr.aria-label=\"pinTask-{{ task?.id }}\"></span>\n    </a>\n  </div>\n</div>\n",
+            "template": "<!-- TASK_INBOX list-item -->\n <div class=\"list-item {{ task?.state }}\">\n   <label class=\"checkbox\">\n     <input\n       type=\"checkbox\"\n       [defaultChecked]=\"task?.state === 'TASK_ARCHIVED'\"\n       name=\"checked\"\n     />\n     <span class=\"checkbox-custom\" (click)=\"onArchive(task.id)\" attr.aria-label=\"archiveTask-{{ task?.id }}\"></span>\n   </label>\n   <div class=\"title\">\n     <input\n       type=\"text\"\n       [value]=\"task?.title\"\n       readonly=\"true\"\n       placeholder=\"Input title\"\n       style=\"background: pink;\"\n     />\n   </div>\n   <div class=\"actions\">\n     <a *ngIf=\"task?.state !== 'TASK_ARCHIVED'\" (click)=\"onPin(task.id)\">\n       <span class=\"icon-star\" attr.aria-label=\"pinTask-{{ task?.id }}\"></span>\n     </a>\n   </div>\n </div>\n",
             "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
@@ -1050,7 +1712,7 @@
                     "name": "task",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 34,
+                    "line": 35,
                     "type": "Task",
                     "decorators": []
                 }
@@ -1061,7 +1723,7 @@
                     "defaultValue": "new EventEmitter<Event>()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 42,
+                    "line": 41,
                     "type": "EventEmitter"
                 },
                 {
@@ -1116,7 +1778,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 44,
+                    "line": 43,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -1139,7 +1801,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\nimport { Task } from '../models/task.model';\r\n\r\n@Component({\r\n  selector: 'app-task',\r\n  template: `\r\n   <div class=\"list-item {{ task?.state }}\">\r\n     <label class=\"checkbox\">\r\n       <input\r\n         type=\"checkbox\"\r\n         [defaultChecked]=\"task?.state === 'TASK_ARCHIVED'\"\r\n         disabled=\"true\"\r\n         name=\"checked\"\r\n       />\r\n       <span class=\"checkbox-custom\" (click)=\"onArchive(task.id)\" attr.aria-label=\"archiveTask-{{ task?.id }}\"></span>\r\n     </label>\r\n     <div class=\"title\">\r\n       <input\r\n         type=\"text\"\r\n         [value]=\"task?.title\"\r\n         readonly=\"true\"\r\n         placeholder=\"Input title\"\r\n       />\r\n     </div>\r\n     <div class=\"actions\">\r\n       <a *ngIf=\"task?.state !== 'TASK_ARCHIVED'\" (click)=\"onPin(task.id)\">\r\n         <span class=\"icon-star\" attr.aria-label=\"pinTask-{{ task?.id }}\"></span>\r\n       </a>\r\n     </div>\r\n   </div>\r\n  `,\r\n})\r\nexport class TaskComponent {\r\n  @Input() task: Task;\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onPinTask = new EventEmitter<Event>();\r\n\r\n  // tslint:disable-next-line: no-output-on-prefix\r\n  @Output()\r\n  onArchiveTask = new EventEmitter<Event>();\r\n\r\n  onPin(id:any){\r\n    this.onPinTask.emit(id);\r\n  }\r\n\r\n  onArchive(id:any){\r\n    this.onArchiveTask.emit(id);\r\n  }\r\n}\r\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\nimport { Task } from '../models/task.model';\r\n\r\n@Component({\r\n  selector: 'app-task',\r\n  template: `\r\n  <!-- TASK_INBOX list-item -->\r\n   <div class=\"list-item {{ task?.state }}\">\r\n     <label class=\"checkbox\">\r\n       <input\r\n         type=\"checkbox\"\r\n         [defaultChecked]=\"task?.state === 'TASK_ARCHIVED'\"\r\n         name=\"checked\"\r\n       />\r\n       <span class=\"checkbox-custom\" (click)=\"onArchive(task.id)\" attr.aria-label=\"archiveTask-{{ task?.id }}\"></span>\r\n     </label>\r\n     <div class=\"title\">\r\n       <input\r\n         type=\"text\"\r\n         [value]=\"task?.title\"\r\n         readonly=\"true\"\r\n         placeholder=\"Input title\"\r\n         style=\"background: pink;\"\r\n       />\r\n     </div>\r\n     <div class=\"actions\">\r\n       <a *ngIf=\"task?.state !== 'TASK_ARCHIVED'\" (click)=\"onPin(task.id)\">\r\n         <span class=\"icon-star\" attr.aria-label=\"pinTask-{{ task?.id }}\"></span>\r\n       </a>\r\n     </div>\r\n   </div>\r\n  `,\r\n})\r\nexport class TaskComponent {\r\n  @Input() task: Task;\r\n\r\n  @Output()\r\n  onPinTask = new EventEmitter<Event>();\r\n\r\n  @Output()\r\n  onArchiveTask = new EventEmitter<Event>();\r\n\r\n  onPin(id:any){  //用在上面html\r\n    this.onPinTask.emit(id);\r\n    console.log('pin!');\r\n  }\r\n\r\n  onArchive(id:any){\r\n    this.onArchiveTask.emit(id);\r\n    console.log('check!');\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": ""
@@ -1335,6 +1997,50 @@
             ]
         },
         {
+            "name": "NuiIconModule",
+            "id": "module-NuiIconModule-e32eeecec111f8d2e63598cc7ffdece056c9a6382fcc2202bae646ed4e39aaff4fd05def139b6dfb84fde9b7708bd5ce342f8b79d3fa2f70fec4cd08a5b9cb19",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "src/app/icon/icon.module.ts",
+            "methods": [],
+            "sourceCode": "import {NgModule} from '@angular/core';\r\nimport {CommonModule} from '@angular/common';\r\n\r\nimport {NebulaIconComponent} from './icon.component';\r\n\r\nconst components = [NebulaIconComponent];\r\n\r\n@NgModule({\r\n    imports: [CommonModule],\r\n    declarations: components,\r\n    exports: components,\r\n})\r\nexport class NuiIconModule {}\r\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "NebulaIconComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "NebulaIconComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
             "name": "TaskModule",
             "id": "module-TaskModule-5245647e76a2de3c1cd0cb9b46ab7430f005b95915c05818d6fd0e04602ee3b2ed2c16ba8fd6e70726309c7ab68edd7d30cfa641ce75d27bb6ff5dfe702c47e5",
             "description": "",
@@ -1408,13 +2114,53 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "object",
-                "defaultValue": "{\r\n  onPinTask: action('onPinTask'),\r\n  onArchiveTask: action('onArchiveTask'),\r\n}"
+                "defaultValue": "{\r\n  // create a callback that appears in the actions panel(在storybook下面有一個actions panel)\r\n  onPinTask: action('onPinTask'),\r\n  onArchiveTask: action('onArchiveTask'),\r\n}"
+            },
+            {
+                "name": "actionsData",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/icon/icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    // create a callback that appears in the actions panel(在storybook下面有一個actions panel)\n    SwitchIconItem: action('SwitchIconItem'),\n}"
+            },
+            {
+                "name": "Activate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/icon/icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Archived",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/task.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "components",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/icon/icon.module.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[NebulaIconComponent]"
+            },
+            {
+                "name": "Deactivate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/icon/icon.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1451,6 +2197,26 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/icon/icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/mybutton/mybutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "defaultTasks",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1459,6 +2225,16 @@
                 "deprecationMessage": "",
                 "type": "object",
                 "defaultValue": "{\r\n  1: { id: '1', title: 'Something', state: 'TASK_INBOX' },\r\n  2: { id: '2', title: 'Something more', state: 'TASK_INBOX' },\r\n  3: { id: '3', title: 'Something else', state: 'TASK_INBOX' },\r\n  4: { id: '4', title: 'Something again', state: 'TASK_INBOX' },\r\n}"
+            },
+            {
+                "name": "Disable",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/mybutton/mybutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Empty",
@@ -1501,10 +2277,30 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "IconPresets",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/icon/icon.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "new Set(['premium', 'beta', 'new', 'text-label'])"
+            },
+            {
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/mybutton/mybutton.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1561,6 +2357,16 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Medium",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/mybutton/mybutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "mock",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1591,7 +2397,57 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/mybutton/mybutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/mybutton/mybutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ShowLess",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/icon/icon.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    src: '../../assets/icon/previous.svg',\n    text: 'hide',\n}"
+            },
+            {
+                "name": "ShowMore",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/icon/icon.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    src: '../../assets/icon/next.svg',\n    text: 'more',\n}"
+            },
+            {
+                "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Button.stories.ts",
@@ -1604,7 +2460,37 @@
                 "name": "Small",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
+                "file": "src/app/mybutton/mybutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "status1",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/button-group/button-group.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "status2",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/button-group/button-group.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "status3",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/button-group/button-group.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1644,6 +2530,16 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/app/button-group/button-group.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonGroupComponent>",
+                "defaultValue": "(args: ButtonGroupComponent) => ({\r\n  props: args,\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/app/components/pure-inbox-screen.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -1658,7 +2554,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "args => ({\r\n  props: {\r\n    ...args,\r\n    onPinTask: TaskStories.actionsData.onPinTask,\r\n    onArchiveTask: TaskStories.actionsData.onArchiveTask,\r\n  },\r\n})"
+                "defaultValue": "args => ({\r\n  props: {\r\n    ...args,\r\n    onPinTaskkk: TaskStories.actionsData.onPinTask,\r\n    onArchiveTaskkk: TaskStories.actionsData.onArchiveTask,\r\n  },\r\n})"
             },
             {
                 "name": "Template",
@@ -1668,7 +2564,27 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "args => ({\r\n  props: {\r\n    ...args,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
+                "defaultValue": "args => ({\r\n  props: {\r\n    ...args,\r\n    // onPinTask: actionsData.onPinTask,\r\n    // onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/icon/icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args) => ({\n    props: {\n        ...args,\n        SwitchIconItem: actionsData.SwitchIconItem,\n    },\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/mybutton/mybutton.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<myButtonComponent>",
+                "defaultValue": "(args: myButtonComponent) => ({\r\n  // component: myButtonComponent,\r\n  props: {\r\n    ...args,\r\n    onDoubleClick: action('onDoubleClick'),\r\n    onCliick: action('onCliick'),\r\n  }\r\n})"
             },
             {
                 "name": "WithInteractions",
@@ -1692,7 +2608,19 @@
             }
         ],
         "functions": [],
-        "typealiases": [],
+        "typealiases": [
+            {
+                "name": "LabelType",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "\"activate\" | \"deactivate\" | \"default\" | \"nostyle\" | \"setting\"",
+                "file": "src/app/models/icon.model.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 186
+            }
+        ],
         "enumerations": [],
         "groupedVariables": {
             "src/app/state/task.state.ts": [
@@ -1726,7 +2654,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "object",
-                    "defaultValue": "{\r\n  onPinTask: action('onPinTask'),\r\n  onArchiveTask: action('onArchiveTask'),\r\n}"
+                    "defaultValue": "{\r\n  // create a callback that appears in the actions panel(在storybook下面有一個actions panel)\r\n  onPinTask: action('onPinTask'),\r\n  onArchiveTask: action('onArchiveTask'),\r\n}"
                 },
                 {
                     "name": "Archived",
@@ -1766,7 +2694,71 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "args => ({\r\n  props: {\r\n    ...args,\r\n    onPinTask: actionsData.onPinTask,\r\n    onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
+                    "defaultValue": "args => ({\r\n  props: {\r\n    ...args,\r\n    // onPinTask: actionsData.onPinTask,\r\n    // onArchiveTask: actionsData.onArchiveTask,\r\n  },\r\n})"
+                }
+            ],
+            "src/app/icon/icon.stories.ts": [
+                {
+                    "name": "actionsData",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/icon/icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n    // create a callback that appears in the actions panel(在storybook下面有一個actions panel)\n    SwitchIconItem: action('SwitchIconItem'),\n}"
+                },
+                {
+                    "name": "Activate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/icon/icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Deactivate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/icon/icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/icon/icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/icon/icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args) => ({\n    props: {\n        ...args,\n        SwitchIconItem: actionsData.SwitchIconItem,\n    },\n})"
+                }
+            ],
+            "src/app/icon/icon.module.ts": [
+                {
+                    "name": "components",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/icon/icon.module.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[NebulaIconComponent]"
                 }
             ],
             "src/app/components/pure-inbox-screen.stories.ts": [
@@ -1850,7 +2842,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "args => ({\r\n  props: {\r\n    ...args,\r\n    onPinTask: TaskStories.actionsData.onPinTask,\r\n    onArchiveTask: TaskStories.actionsData.onArchiveTask,\r\n  },\r\n})"
+                    "defaultValue": "args => ({\r\n  props: {\r\n    ...args,\r\n    onPinTaskkk: TaskStories.actionsData.onPinTask,\r\n    onArchiveTaskkk: TaskStories.actionsData.onArchiveTask,\r\n  },\r\n})"
                 },
                 {
                     "name": "WithPinnedTasks",
@@ -1861,6 +2853,88 @@
                     "deprecationMessage": "",
                     "type": "",
                     "defaultValue": "Template.bind({})"
+                }
+            ],
+            "src/app/mybutton/mybutton.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/mybutton/mybutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Disable",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/mybutton/mybutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/mybutton/mybutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Medium",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/mybutton/mybutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/mybutton/mybutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/mybutton/mybutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/mybutton/mybutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/mybutton/mybutton.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<myButtonComponent>",
+                    "defaultValue": "(args: myButtonComponent) => ({\r\n  // component: myButtonComponent,\r\n  props: {\r\n    ...args,\r\n    onDoubleClick: action('onDoubleClick'),\r\n    onCliick: action('onCliick'),\r\n  }\r\n})"
                 }
             ],
             "src/environments/environment.prod.ts": [
@@ -1885,6 +2959,38 @@
                     "deprecationMessage": "",
                     "type": "object",
                     "defaultValue": "{\n  production: false\n}"
+                }
+            ],
+            "src/app/icon/icon.component.ts": [
+                {
+                    "name": "IconPresets",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/icon/icon.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "new Set(['premium', 'beta', 'new', 'text-label'])"
+                },
+                {
+                    "name": "ShowLess",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/icon/icon.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n    src: '../../assets/icon/previous.svg',\n    text: 'hide',\n}"
+                },
+                {
+                    "name": "ShowMore",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/icon/icon.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n    src: '../../assets/icon/next.svg',\n    text: 'more',\n}"
                 }
             ],
             "src/stories/Button.stories.ts": [
@@ -2014,15 +3120,71 @@
                     "type": "",
                     "defaultValue": "() => {\n    let storage = {};\n    return {\n      getItem: key => (key in storage ? storage[key] : null),\n      setItem: (key, value) => (storage[key] = value || ''),\n      removeItem: key => delete storage[key],\n      clear: () => (storage = {}),\n    };\n  }"
                 }
+            ],
+            "src/app/button-group/button-group.stories.ts": [
+                {
+                    "name": "status1",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/button-group/button-group.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "status2",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/button-group/button-group.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "status3",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/button-group/button-group.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/button-group/button-group.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonGroupComponent>",
+                    "defaultValue": "(args: ButtonGroupComponent) => ({\r\n  props: args,\r\n})"
+                }
             ]
         },
         "groupedFunctions": {},
         "groupedEnumerations": {},
-        "groupedTypeAliases": {}
+        "groupedTypeAliases": {
+            "src/app/models/icon.model.ts": [
+                {
+                    "name": "LabelType",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "\"activate\" | \"deactivate\" | \"default\" | \"nostyle\" | \"setting\"",
+                    "file": "src/app/models/icon.model.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 186
+                }
+            ]
+        }
     },
     "routes": [],
     "coverage": {
-        "count": 4,
+        "count": 2,
         "status": "low",
         "files": [
             {
@@ -2032,6 +3194,55 @@
                 "name": "AppComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/button-group/button-group.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonGroupComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/10",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/button-group/button-group.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "status1",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/button-group/button-group.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "status2",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/button-group/button-group.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "status3",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/button-group/button-group.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -2220,12 +3431,227 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/icon/icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NebulaIconComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/icon/icon.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "IconPresets",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/icon/icon.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ShowLess",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/icon/icon.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ShowMore",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/icon/icon.module.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "components",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/icon/icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "actionsData",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/icon/icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Activate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/icon/icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Deactivate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/icon/icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/icon/icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/icon.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Icon",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/icon.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Label",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/models/task.model.ts",
                 "type": "interface",
                 "linktype": "interface",
                 "name": "Task",
                 "coveragePercent": 0,
                 "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/mybutton/mybutton.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "myButtonComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/11",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/mybutton/mybutton.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "myButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/7",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/mybutton/mybutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/mybutton/mybutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Disable",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/mybutton/mybutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/mybutton/mybutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Medium",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/mybutton/mybutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/mybutton/mybutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/mybutton/mybutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/mybutton/mybutton.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {

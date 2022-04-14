@@ -1,5 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Icon Activate 1`] = `
+<storybook-wrapper>
+  <nui-icon
+    ng-reflect-icon="[object Object]"
+  >
+    <div>
+      work!
+    </div>
+    <div
+      class="nui-icon small"
+      ng-reflect-ng-class="small"
+    >
+      
+      
+      
+      
+      <img
+        class="icon-img"
+        src=""
+      />
+      
+    </div>
+  </nui-icon>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots Icon Deactivate 1`] = `
+<storybook-wrapper>
+  <nui-icon
+    ng-reflect-icon="[object Object]"
+  >
+    <div>
+      work!
+    </div>
+    <div
+      class="nui-icon small"
+      ng-reflect-ng-class="small"
+    >
+      
+      
+      
+      
+      <img
+        class="icon-img"
+        src=""
+      />
+      
+    </div>
+  </nui-icon>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots Icon Default 1`] = `
+<storybook-wrapper>
+  <nui-icon
+    ng-reflect-icon="[object Object]"
+  >
+    <div>
+      work!
+    </div>
+    <div
+      class="nui-icon small"
+      ng-reflect-ng-class="small"
+    >
+      
+      
+      
+      
+      <img
+        class="icon-img"
+        src=""
+      />
+      
+    </div>
+  </nui-icon>
+</storybook-wrapper>
+`;
+
 exports[`Storyshots PureInboxScreen Default 1`] = `
 <storybook-wrapper>
   <app-pure-inbox-screen>

@@ -16,7 +16,7 @@ export default {
       providers: [Store],
     }),
   ],
-  title: 'PureInboxScreen',
+  title: 'official tutorials/PureInboxScreen',
 } as Meta;
 
 const Template: Story = (args) => ({
@@ -34,7 +34,7 @@ export const WithInteractions = Template.bind({});
 WithInteractions.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
   // Simulates pinning the first task
-  await fireEvent.click(canvas.getByLabelText("pinTask-1"));
+  await fireEvent.click(canvas.getByLabelText("pinTask-1"),{delay:5000});
   // Simulates pinning the third task
   await fireEvent.click(canvas.getByLabelText("pinTask-3"));
 };

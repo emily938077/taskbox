@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -93,5 +93,8 @@
       }
     }
   },
-  "defaultProject": "intro-storybook-angular-template"
+  "defaultProject": "intro-storybook-angular-template",
+  "cli": {
+    "analytics": false
+  }
 }

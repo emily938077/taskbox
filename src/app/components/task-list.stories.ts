@@ -18,14 +18,14 @@ export default {
     //👇 Wraps our stories with a decorator
     componentWrapperDecorator(story => `<div style="margin: 3em">${story}</div>`),
   ],
-  title: 'PureTaskList',
+  title: 'official tutorials/PureTaskList',
 } as Meta;
 
 const Template: Story = args => ({
   props: {
     ...args,
-    onPinTask: TaskStories.actionsData.onPinTask,
-    onArchiveTask: TaskStories.actionsData.onArchiveTask,
+    onPinTaskkk: TaskStories.actionsData.onPinTask,
+    onArchiveTaskkk: TaskStories.actionsData.onArchiveTask,
   },
 });
 

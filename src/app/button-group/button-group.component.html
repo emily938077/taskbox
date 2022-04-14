@@ -1,0 +1,18 @@
+<input #inputbox data-testid = "email" value = "write the email" placeholder = 'qqq@mail.com'>
+<app-button
+  #button1
+  data-testid = "button1"
+  (onClick)="onClean(inputbox)"
+  [size]="size1"
+  [label]="label1"
+  >
+</app-button>
+<app-button
+  #button2
+  data-testid = "button2"
+  (onClick)="onClean(inputbox.value)"
+  [size]="size2"
+  [primary]="primary"
+  [label]="label2"
+  >
+</app-button>
