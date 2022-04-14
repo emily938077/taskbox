@@ -76,6 +76,7 @@ export class TasksState {
       entities,
     });
   }
+
   // Triggers the archiveTask action, similar to redux
   @Action(ArchiveTask)
   archiveTask({ patchState, getState }: StateContext<TaskStateModel>, { payload }: ArchiveTask) {

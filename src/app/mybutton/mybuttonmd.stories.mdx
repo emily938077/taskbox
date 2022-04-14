@@ -1,0 +1,112 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { action } from "@storybook/addon-actions";
+import { myButtonComponent } from "./mybutton.component";
+import { within, userEvent } from '@storybook/testing-library';
+
+<Meta
+  title="Public/myButtonMDX"
+  component={myButtonComponent}
+  argTypes={{
+    label: {
+      control: {
+        type: "text",
+      },
+    },
+    size: {
+      control: {
+        type: "select",
+        options: ["small", "medium", "large"],
+      },
+    },
+    primary: {
+      control: {
+        type: "boolean",
+      },
+    },
+    backgroundColor: {
+      control: {
+        type: 'color'
+      }
+    }
+  }}
+/>
+
+
+export const Template = (args) => <app-button {...args} />
+
+# Button
+
+This is Button's description.
+
+<Story
+  name="Primary"
+  args={{
+    primary: true,
+    label: "Primary",
+  }}
+  play={async ({ canvasElement }) => {
+      // Starts querying the component from its root element
+      const canvas = within(canvasElement);
+      await new Promise(f => setTimeout(f, 1000));
+      await userEvent.click(canvas.getByTestId('b1'));
+    }}>
+  {Template.bind({})}
+</Story>
+
+
+drop it in `Canvas` to get code
+
+<Canvas>
+  <Story
+    name="Secondary"
+    args={{
+      primary: false,
+      label: "Secondary",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+You can write freely with `mdx`!
+
+<Canvas>
+  <Story
+    name="Large"
+    args={{
+      size: 'large',
+      label: "Large",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Medium"
+    args={{
+      size: 'medium',
+      label: "Medium",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Small"
+    args={{
+      size: 'small',
+      label: "Small",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+  <Story
+    name="Disable"
+    args={{
+      disable: true,
+      label: "Disable",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable of={myButtonComponent} />
