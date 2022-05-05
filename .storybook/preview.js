@@ -1,5 +1,8 @@
 import { setCompodocJson } from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
+import { withTests } from "@storybook/addon-jest";
+import results from '../.jest-test-results.json';
+
 // import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 setCompodocJson(docJson);
 
@@ -31,3 +34,10 @@ export const parameters = {
     }
   }
 };
+
+export const decorators = [
+  withTests({
+    results,
+    filesExt: "((\\.specs?)|(\\.tests?))?(\\.ts)?$",
+  }),
+];

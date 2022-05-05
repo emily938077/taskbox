@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-    <app-inbox-screen></app-inbox-screen>
-  `,
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
   title = 'taskbox'

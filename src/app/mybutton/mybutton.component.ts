@@ -8,14 +8,14 @@ import { stringify } from 'querystring';
 })
 export class myButtonComponent {
 
-  @Input() primary = false;
-  @Input() backgroundColor?: string;
-  @Input() size: 'small' | 'medium' | 'large' = 'medium';
-  @Input() label: any = 'button';
-  @Input() disable = false;
+  @Input()primary = false;
+  @Input()backgroundColor?: string;
+  @Input()size: 'small' | 'medium' | 'large' = 'medium';
+  @Input()label: any = 'button';
+  @Input()disable = false;
 
-  @Output() onDoubleClick = new EventEmitter<Event>();
-  @Output() onClick = new EventEmitter<Event>();
+  // @Output() onDoubleClick = new EventEmitter<Event>();
+  // @Output() onClick = new EventEmitter<Event>();
 
   constructor() { }
 
@@ -27,7 +27,7 @@ export class myButtonComponent {
   }
 
   onCliick(id:any){
-    this.onClick.emit(id);
+    // this.onClick.emit(id);
     switch(this.size){
       case 'small':
         this.size = 'medium';
@@ -45,6 +45,6 @@ export class myButtonComponent {
   onDblClick(id:any){
     // this.disable = !this.disable;
     this.primary = !this.primary;
-    this.onDoubleClick.emit(id);
+    // this.onDoubleClick.emit(id);
   }
 }

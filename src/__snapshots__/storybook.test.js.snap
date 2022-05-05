@@ -1,2090 +1,429 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Icon Activate 1`] = `
+exports[`Storyshots PUBLIC/buttonGroup Phone 1`] = `
 <storybook-wrapper>
-  <nui-icon
-    ng-reflect-icon="[object Object]"
+  <app-button-group
+    ng-reflect-label1="but1"
+    ng-reflect-label2="but2"
   >
-    <div>
-      work!
-    </div>
-    <div
-      class="nui-icon small"
-      ng-reflect-ng-class="small"
+    <app-loginbox
+      ng-reflect-cleanbox="normal"
     >
-      
-      
-      
-      
-      <img
-        class="icon-img"
-        src=""
+      <p>
+        phone
+      </p>
+      <input
+        data-testid="email"
+        name="inputbox"
+        placeholder="0912345678"
+        type="phone"
       />
-      
-    </div>
-  </nui-icon>
+      <p>
+        
+      </p>
+      <p>
+        error:
+      </p>
+      <p>
+        cleanbox:normal
+      </p>
+    </app-loginbox>
+    <app-button
+      data-testid="button1"
+      ng-reflect-label="but1"
+      ng-reflect-size="large"
+    >
+      <p>
+         but1
+      </p>
+      <button
+        class="storybook-button secondary large"
+        data-testid="b1"
+        ng-reflect-ng-class="storybook-button,secondary,lar"
+        ng-reflect-ng-style="[object Object]"
+        type="button"
+      >
+         but1
+  
+      </button>
+    </app-button>
+    <app-button
+      data-testid="button2"
+      ng-reflect-label="but2"
+      ng-reflect-primary="true"
+      ng-reflect-size="medium"
+    >
+      <p>
+         but2
+      </p>
+      <button
+        class="storybook-button primary medium"
+        data-testid="b1"
+        ng-reflect-ng-class="storybook-button,primary,mediu"
+        ng-reflect-ng-style="[object Object]"
+        type="button"
+      >
+         but2
+  
+      </button>
+    </app-button>
+  </app-button-group>
 </storybook-wrapper>
 `;
 
-exports[`Storyshots Icon Deactivate 1`] = `
+exports[`Storyshots PUBLIC/buttonGroup Status 2 1`] = `
 <storybook-wrapper>
-  <nui-icon
-    ng-reflect-icon="[object Object]"
+  <app-button-group
+    ng-reflect-label1="button1"
+    ng-reflect-label2="button2"
   >
-    <div>
-      work!
-    </div>
-    <div
-      class="nui-icon small"
-      ng-reflect-ng-class="small"
+    <app-loginbox
+      ng-reflect-cleanbox="normal"
     >
-      
-      
-      
-      
-      <img
-        class="icon-img"
-        src=""
+      <p>
+        phone
+      </p>
+      <input
+        data-testid="email"
+        name="inputbox"
+        placeholder="0912345678"
+        type="phone"
       />
-      
-    </div>
-  </nui-icon>
+      <p>
+        
+      </p>
+      <p>
+        error:
+      </p>
+      <p>
+        cleanbox:normal
+      </p>
+    </app-loginbox>
+    <app-button
+      data-testid="button1"
+      ng-reflect-label="button1"
+      ng-reflect-size="small"
+    >
+      <p>
+         button1
+      </p>
+      <button
+        class="storybook-button secondary small"
+        data-testid="b1"
+        ng-reflect-ng-class="storybook-button,secondary,sma"
+        ng-reflect-ng-style="[object Object]"
+        type="button"
+      >
+         button1
+  
+      </button>
+    </app-button>
+    <app-button
+      data-testid="button2"
+      ng-reflect-label="button2"
+      ng-reflect-primary="true"
+      ng-reflect-size="medium"
+    >
+      <p>
+         button2
+      </p>
+      <button
+        class="storybook-button primary medium"
+        data-testid="b1"
+        ng-reflect-ng-class="storybook-button,primary,mediu"
+        ng-reflect-ng-style="[object Object]"
+        type="button"
+      >
+         button2
+  
+      </button>
+    </app-button>
+  </app-button-group>
 </storybook-wrapper>
 `;
 
-exports[`Storyshots Icon Default 1`] = `
+exports[`Storyshots PUBLIC/buttonGroup Status 3 1`] = `
 <storybook-wrapper>
-  <nui-icon
-    ng-reflect-icon="[object Object]"
+  <app-button-group
+    ng-reflect-label1="button1"
+    ng-reflect-label2="button2"
   >
-    <div>
-      work!
-    </div>
-    <div
-      class="nui-icon small"
-      ng-reflect-ng-class="small"
+    <app-loginbox
+      ng-reflect-cleanbox="normal"
     >
-      
-      
-      
-      
-      <img
-        class="icon-img"
-        src=""
+      <p>
+        phone
+      </p>
+      <input
+        data-testid="email"
+        name="inputbox"
+        placeholder="0912345678"
+        type="phone"
       />
+      <p>
+        
+      </p>
+      <p>
+        error:
+      </p>
+      <p>
+        cleanbox:normal
+      </p>
+    </app-loginbox>
+    <app-button
+      data-testid="button1"
+      ng-reflect-label="button1"
+      ng-reflect-size="small"
+    >
+      <p>
+         button1
+      </p>
+      <button
+        class="storybook-button secondary small"
+        data-testid="b1"
+        ng-reflect-ng-class="storybook-button,secondary,sma"
+        ng-reflect-ng-style="[object Object]"
+        type="button"
+      >
+         button1
+  
+      </button>
+    </app-button>
+    <app-button
+      data-testid="button2"
+      ng-reflect-label="button2"
+      ng-reflect-primary="true"
+      ng-reflect-size="small"
+    >
+      <p>
+         button2
+      </p>
+      <button
+        class="storybook-button primary small"
+        data-testid="b1"
+        ng-reflect-ng-class="storybook-button,primary,small"
+        ng-reflect-ng-style="[object Object]"
+        type="button"
+      >
+         button2
+  
+      </button>
+    </app-button>
+  </app-button-group>
+</storybook-wrapper>
+`;
+
+exports[`Storyshots Public/loginBox Default 1`] = `
+<storybook-wrapper>
+  <app-loginbox>
+    <p>
+      email
+    </p>
+    <input
+      data-testid="email"
+      name="inputbox"
+      placeholder="aaa@mail.com"
+      type="email"
+    />
+    <p>
       
-    </div>
-  </nui-icon>
+    </p>
+    <p>
+      error:
+    </p>
+    <p>
+      cleanbox:normal
+    </p>
+  </app-loginbox>
 </storybook-wrapper>
 `;
 
-exports[`Storyshots PureInboxScreen Default 1`] = `
+exports[`Storyshots Public/loginBox Email 1`] = `
 <storybook-wrapper>
-  <app-pure-inbox-screen>
-    
-    <div
-      class="page lists-show"
-    >
-      <nav>
-        <h1
-          class="title-page"
-        >
-          <span
-            class="title-wrapper"
-          >
-            Taskbox
-          </span>
-        </h1>
-      </nav>
-      <app-task-list>
-        <app-pure-task-list
-          ng-reflect-tasks="[object Object],[object Object"
-        >
-          <div
-            class="list-items"
-          >
-            <app-task
-              ng-reflect-task="[object Object]"
-            >
-              <div
-                class="TASK_INBOX list-item"
-              >
-                <label
-                  class="checkbox"
-                >
-                  <input
-                    disabled="true"
-                    name="checked"
-                    type="checkbox"
-                  />
-                  <span
-                    aria-label="archiveTask-1"
-                    class="checkbox-custom"
-                  />
-                </label>
-                <div
-                  class="title"
-                >
-                  <input
-                    placeholder="Input title"
-                    readonly="true"
-                    style="background: sky blue;"
-                    type="text"
-                  />
-                </div>
-                <div
-                  class="actions"
-                >
-                  <a>
-                    <span
-                      aria-label="pinTask-1"
-                      class="icon-star"
-                    />
-                  </a>
-                  
-                </div>
-              </div>
-            </app-task>
-            <app-task
-              ng-reflect-task="[object Object]"
-            >
-              <div
-                class="TASK_INBOX list-item"
-              >
-                <label
-                  class="checkbox"
-                >
-                  <input
-                    disabled="true"
-                    name="checked"
-                    type="checkbox"
-                  />
-                  <span
-                    aria-label="archiveTask-2"
-                    class="checkbox-custom"
-                  />
-                </label>
-                <div
-                  class="title"
-                >
-                  <input
-                    placeholder="Input title"
-                    readonly="true"
-                    style="background: sky blue;"
-                    type="text"
-                  />
-                </div>
-                <div
-                  class="actions"
-                >
-                  <a>
-                    <span
-                      aria-label="pinTask-2"
-                      class="icon-star"
-                    />
-                  </a>
-                  
-                </div>
-              </div>
-            </app-task>
-            <app-task
-              ng-reflect-task="[object Object]"
-            >
-              <div
-                class="TASK_INBOX list-item"
-              >
-                <label
-                  class="checkbox"
-                >
-                  <input
-                    disabled="true"
-                    name="checked"
-                    type="checkbox"
-                  />
-                  <span
-                    aria-label="archiveTask-3"
-                    class="checkbox-custom"
-                  />
-                </label>
-                <div
-                  class="title"
-                >
-                  <input
-                    placeholder="Input title"
-                    readonly="true"
-                    style="background: sky blue;"
-                    type="text"
-                  />
-                </div>
-                <div
-                  class="actions"
-                >
-                  <a>
-                    <span
-                      aria-label="pinTask-3"
-                      class="icon-star"
-                    />
-                  </a>
-                  
-                </div>
-              </div>
-            </app-task>
-            <app-task
-              ng-reflect-task="[object Object]"
-            >
-              <div
-                class="TASK_INBOX list-item"
-              >
-                <label
-                  class="checkbox"
-                >
-                  <input
-                    disabled="true"
-                    name="checked"
-                    type="checkbox"
-                  />
-                  <span
-                    aria-label="archiveTask-4"
-                    class="checkbox-custom"
-                  />
-                </label>
-                <div
-                  class="title"
-                >
-                  <input
-                    placeholder="Input title"
-                    readonly="true"
-                    style="background: sky blue;"
-                    type="text"
-                  />
-                </div>
-                <div
-                  class="actions"
-                >
-                  <a>
-                    <span
-                      aria-label="pinTask-4"
-                      class="icon-star"
-                    />
-                  </a>
-                  
-                </div>
-              </div>
-            </app-task>
-            
-            
-            
-          </div>
-        </app-pure-task-list>
-      </app-task-list>
-    </div>
-    
-  </app-pure-inbox-screen>
+  <app-loginbox>
+    <p>
+      email
+    </p>
+    <input
+      data-testid="email"
+      name="inputbox"
+      placeholder="aaa@mail.com"
+      type="email"
+    />
+    <p>
+      
+    </p>
+    <p>
+      error:
+    </p>
+    <p>
+      cleanbox:normal
+    </p>
+  </app-loginbox>
 </storybook-wrapper>
 `;
 
-exports[`Storyshots PureInboxScreen Error 1`] = `
+exports[`Storyshots Public/myButton Default 1`] = `
 <storybook-wrapper>
-  <app-pure-inbox-screen
-    ng-reflect-error="true"
+  <app-button
+    ng-reflect-label="press me!"
+    ng-reflect-size="medium"
   >
-    <div
-      class="page lists-show"
+    <p>
+       press me!
+    </p>
+    <button
+      class="storybook-button secondary medium"
+      data-testid="b1"
+      ng-reflect-ng-class="storybook-button,secondary,med"
+      ng-reflect-ng-style="[object Object]"
+      type="button"
     >
-      <div
-        class="wrapper-message"
-      >
-        <span
-          class="icon-face-sad"
-        />
-        <div
-          class="title-message"
-        >
-          Oh no!
-        </div>
-        <div
-          class="subtitle-message"
-        >
-          Something went wrong
-        </div>
-      </div>
-    </div>
-    
-    
-  </app-pure-inbox-screen>
+       press me!
+  
+    </button>
+  </app-button>
 </storybook-wrapper>
 `;
 
-exports[`Storyshots PureInboxScreen With Interactions 1`] = `
+exports[`Storyshots Public/myButton Disable 1`] = `
 <storybook-wrapper>
-  <app-pure-inbox-screen>
-    
-    <div
-      class="page lists-show"
-    >
-      <nav>
-        <h1
-          class="title-page"
-        >
-          <span
-            class="title-wrapper"
-          >
-            Taskbox
-          </span>
-        </h1>
-      </nav>
-      <app-task-list>
-        <app-pure-task-list
-          ng-reflect-tasks="[object Object],[object Object"
-        >
-          <div
-            class="list-items"
-          >
-            <app-task
-              ng-reflect-task="[object Object]"
-            >
-              <div
-                class="TASK_INBOX list-item"
-              >
-                <label
-                  class="checkbox"
-                >
-                  <input
-                    disabled="true"
-                    name="checked"
-                    type="checkbox"
-                  />
-                  <span
-                    aria-label="archiveTask-1"
-                    class="checkbox-custom"
-                  />
-                </label>
-                <div
-                  class="title"
-                >
-                  <input
-                    placeholder="Input title"
-                    readonly="true"
-                    style="background: sky blue;"
-                    type="text"
-                  />
-                </div>
-                <div
-                  class="actions"
-                >
-                  <a>
-                    <span
-                      aria-label="pinTask-1"
-                      class="icon-star"
-                    />
-                  </a>
-                  
-                </div>
-              </div>
-            </app-task>
-            <app-task
-              ng-reflect-task="[object Object]"
-            >
-              <div
-                class="TASK_INBOX list-item"
-              >
-                <label
-                  class="checkbox"
-                >
-                  <input
-                    disabled="true"
-                    name="checked"
-                    type="checkbox"
-                  />
-                  <span
-                    aria-label="archiveTask-2"
-                    class="checkbox-custom"
-                  />
-                </label>
-                <div
-                  class="title"
-                >
-                  <input
-                    placeholder="Input title"
-                    readonly="true"
-                    style="background: sky blue;"
-                    type="text"
-                  />
-                </div>
-                <div
-                  class="actions"
-                >
-                  <a>
-                    <span
-                      aria-label="pinTask-2"
-                      class="icon-star"
-                    />
-                  </a>
-                  
-                </div>
-              </div>
-            </app-task>
-            <app-task
-              ng-reflect-task="[object Object]"
-            >
-              <div
-                class="TASK_INBOX list-item"
-              >
-                <label
-                  class="checkbox"
-                >
-                  <input
-                    disabled="true"
-                    name="checked"
-                    type="checkbox"
-                  />
-                  <span
-                    aria-label="archiveTask-3"
-                    class="checkbox-custom"
-                  />
-                </label>
-                <div
-                  class="title"
-                >
-                  <input
-                    placeholder="Input title"
-                    readonly="true"
-                    style="background: sky blue;"
-                    type="text"
-                  />
-                </div>
-                <div
-                  class="actions"
-                >
-                  <a>
-                    <span
-                      aria-label="pinTask-3"
-                      class="icon-star"
-                    />
-                  </a>
-                  
-                </div>
-              </div>
-            </app-task>
-            <app-task
-              ng-reflect-task="[object Object]"
-            >
-              <div
-                class="TASK_INBOX list-item"
-              >
-                <label
-                  class="checkbox"
-                >
-                  <input
-                    disabled="true"
-                    name="checked"
-                    type="checkbox"
-                  />
-                  <span
-                    aria-label="archiveTask-4"
-                    class="checkbox-custom"
-                  />
-                </label>
-                <div
-                  class="title"
-                >
-                  <input
-                    placeholder="Input title"
-                    readonly="true"
-                    style="background: sky blue;"
-                    type="text"
-                  />
-                </div>
-                <div
-                  class="actions"
-                >
-                  <a>
-                    <span
-                      aria-label="pinTask-4"
-                      class="icon-star"
-                    />
-                  </a>
-                  
-                </div>
-              </div>
-            </app-task>
-            
-            
-            
-          </div>
-        </app-pure-task-list>
-      </app-task-list>
-    </div>
-    
-  </app-pure-inbox-screen>
-</storybook-wrapper>
-`;
-
-exports[`Storyshots PureTaskList Default 1`] = `
-<storybook-wrapper>
-  <div
-    style="margin: 3em;"
+  <app-button
+    ng-reflect-disable="true"
+    ng-reflect-label="press me!"
+    ng-reflect-size="medium"
   >
-    <app-pure-task-list
-      ng-reflect-tasks="[object Object],[object Object"
+    <p>
+       press me!
+    </p>
+    <button
+      class="storybook-button secondary medium disable"
+      data-testid="b1"
+      disabled=""
+      ng-reflect-ng-class="storybook-button,secondary,med"
+      ng-reflect-ng-style="[object Object]"
+      type="button"
     >
-      <div
-        class="list-items"
-      >
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-1"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-1"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-2"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-2"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-3"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-3"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-4"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-4"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-5"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-5"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-6"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-6"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        
-        
-        
-      </div>
-    </app-pure-task-list>
-    
-  </div>
+       press me!
+  
+    </button>
+  </app-button>
 </storybook-wrapper>
 `;
 
-exports[`Storyshots PureTaskList Empty 1`] = `
+exports[`Storyshots Public/myButton Large 1`] = `
 <storybook-wrapper>
-  <div
-    style="margin: 3em;"
+  <app-button
+    ng-reflect-label="large!"
+    ng-reflect-size="large"
   >
-    <app-pure-task-list
-      ng-reflect-loading="false"
-      ng-reflect-tasks=""
+    <p>
+       large!
+    </p>
+    <button
+      class="storybook-button secondary large"
+      data-testid="b1"
+      ng-reflect-ng-class="storybook-button,secondary,lar"
+      ng-reflect-ng-style="[object Object]"
+      type="button"
     >
-      <div
-        class="list-items"
-      >
-        
-        <div
-          class="wrapper-message"
-        >
-          <span
-            class="icon-check"
-          />
-          <div
-            class="title-message"
-          >
-            You have no tasks
-          </div>
-          <div
-            class="subtitle-message"
-          >
-            Sit back and relax
-          </div>
-        </div>
-        
-        
-      </div>
-    </app-pure-task-list>
-    
-  </div>
+       large!
+  
+    </button>
+  </app-button>
 </storybook-wrapper>
 `;
 
-exports[`Storyshots PureTaskList Loading 1`] = `
+exports[`Storyshots Public/myButton Medium 1`] = `
 <storybook-wrapper>
-  <div
-    style="margin: 3em;"
+  <app-button
+    ng-reflect-label="press me!"
+    ng-reflect-size="medium"
   >
-    <app-pure-task-list
-      ng-reflect-loading="true"
-      ng-reflect-tasks=""
+    <p>
+       press me!
+    </p>
+    <button
+      class="storybook-button secondary medium"
+      data-testid="b1"
+      ng-reflect-ng-class="storybook-button,secondary,med"
+      ng-reflect-ng-style="[object Object]"
+      type="button"
     >
-      <div
-        class="list-items"
-      >
-        
-        
-        <div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          
-        </div>
-        
-      </div>
-    </app-pure-task-list>
-    
-  </div>
+       press me!
+  
+    </button>
+  </app-button>
 </storybook-wrapper>
 `;
 
-exports[`Storyshots PureTaskList With Pinned Tasks 1`] = `
+exports[`Storyshots Public/myButton Primary 1`] = `
 <storybook-wrapper>
-  <div
-    style="margin: 3em;"
+  <app-button
+    ng-reflect-label="press me!"
+    ng-reflect-primary="true"
+    ng-reflect-size="medium"
   >
-    <app-pure-task-list
-      ng-reflect-tasks="[object Object],[object Object"
+    <p>
+       press me!
+    </p>
+    <button
+      class="storybook-button primary medium"
+      data-testid="b1"
+      ng-reflect-ng-class="storybook-button,primary,mediu"
+      ng-reflect-ng-style="[object Object]"
+      type="button"
     >
-      <div
-        class="list-items"
-      >
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_PINNED list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-6"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-6"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-1"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-1"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-2"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-2"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-3"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-3"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-4"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-4"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-5"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-5"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        
-        
-        
-      </div>
-    </app-pure-task-list>
-    
-  </div>
+       press me!
+  
+    </button>
+  </app-button>
 </storybook-wrapper>
 `;
 
-exports[`Storyshots Task Archived 1`] = `
+exports[`Storyshots Public/myButton Secondary 1`] = `
 <storybook-wrapper>
-  <app-task
-    ng-reflect-task="[object Object]"
+  <app-button
+    ng-reflect-label="press me!"
+    ng-reflect-primary="false"
+    ng-reflect-size="medium"
   >
-    <div
-      class="TASK_ARCHIVED list-item"
+    <p>
+       press me!
+    </p>
+    <button
+      class="storybook-button secondary medium"
+      data-testid="b1"
+      ng-reflect-ng-class="storybook-button,secondary,med"
+      ng-reflect-ng-style="[object Object]"
+      type="button"
     >
-      <label
-        class="checkbox"
-      >
-        <input
-          checked=""
-          disabled="true"
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          aria-label="archiveTask-1"
-          class="checkbox-custom"
-        />
-      </label>
-      <div
-        class="title"
-      >
-        <input
-          placeholder="Input title"
-          readonly="true"
-          type="text"
-        />
-      </div>
-      <div
-        class="actions"
-      >
-        
-      </div>
-    </div>
-  </app-task>
+       press me!
+  
+    </button>
+  </app-button>
 </storybook-wrapper>
 `;
 
-exports[`Storyshots Task Default 1`] = `
+exports[`Storyshots Public/myButton Small 1`] = `
 <storybook-wrapper>
-  <app-task
-    ng-reflect-task="[object Object]"
+  <app-button
+    ng-reflect-label="press me!"
+    ng-reflect-size="small"
   >
-    <div
-      class="TASK_INBOX list-item"
+    <p>
+       press me!
+    </p>
+    <button
+      class="storybook-button secondary small"
+      data-testid="b1"
+      ng-reflect-ng-class="storybook-button,secondary,sma"
+      ng-reflect-ng-style="[object Object]"
+      type="button"
     >
-      <label
-        class="checkbox"
-      >
-        <input
-          disabled="true"
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          aria-label="archiveTask-1"
-          class="checkbox-custom"
-        />
-      </label>
-      <div
-        class="title"
-      >
-        <input
-          placeholder="Input title"
-          readonly="true"
-          type="text"
-        />
-      </div>
-      <div
-        class="actions"
-      >
-        <a>
-          <span
-            aria-label="pinTask-1"
-            class="icon-star"
-          />
-        </a>
-        
-      </div>
-    </div>
-  </app-task>
-</storybook-wrapper>
-`;
-
-exports[`Storyshots Task Pinned 1`] = `
-<storybook-wrapper>
-  <app-task
-    ng-reflect-task="[object Object]"
-  >
-    <div
-      class="TASK_PINNED list-item"
-    >
-      <label
-        class="checkbox"
-      >
-        <input
-          disabled="true"
-          name="checked"
-          type="checkbox"
-        />
-        <span
-          aria-label="archiveTask-1"
-          class="checkbox-custom"
-        />
-      </label>
-      <div
-        class="title"
-      >
-        <input
-          placeholder="Input title"
-          readonly="true"
-          type="text"
-        />
-      </div>
-      <div
-        class="actions"
-      >
-        <a>
-          <span
-            aria-label="pinTask-1"
-            class="icon-star"
-          />
-        </a>
-        
-      </div>
-    </div>
-  </app-task>
-</storybook-wrapper>
-`;
-
-exports[`Storyshots TaskList Default 1`] = `
-<storybook-wrapper>
-  <div
-    style="margin: 3em;"
-  >
-    <app-task-list
-      ng-reflect-tasks="[object Object],[object Object"
-    >
-      <div
-        class="list-items"
-      >
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-1"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-1"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-2"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-2"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-3"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-3"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-4"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-4"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-5"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-5"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-6"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-6"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        
-        
-        
-      </div>
-    </app-task-list>
-    
-  </div>
-</storybook-wrapper>
-`;
-
-exports[`Storyshots TaskList Empty 1`] = `
-<storybook-wrapper>
-  <div
-    style="margin: 3em;"
-  >
-    <app-task-list
-      ng-reflect-loading="false"
-      ng-reflect-tasks=""
-    >
-      <div
-        class="list-items"
-      >
-        
-        <div
-          class="wrapper-message"
-        >
-          <span
-            class="icon-check"
-          />
-          <div
-            class="title-message"
-          >
-            You have no tasks
-          </div>
-          <div
-            class="subtitle-message"
-          >
-            Sit back and relax
-          </div>
-        </div>
-        
-        
-      </div>
-    </app-task-list>
-    
-  </div>
-</storybook-wrapper>
-`;
-
-exports[`Storyshots TaskList Loading 1`] = `
-<storybook-wrapper>
-  <div
-    style="margin: 3em;"
-  >
-    <app-task-list
-      ng-reflect-loading="true"
-      ng-reflect-tasks=""
-    >
-      <div
-        class="list-items"
-      >
-        
-        
-        <div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          <div
-            class="loading-item"
-          >
-            <span
-              class="glow-checkbox"
-            />
-            <span
-              class="glow-text"
-            >
-              <span>
-                Loading
-              </span>
-              <span>
-                cool
-              </span>
-              <span>
-                state
-              </span>
-            </span>
-          </div>
-          
-        </div>
-        
-      </div>
-    </app-task-list>
-    
-  </div>
-</storybook-wrapper>
-`;
-
-exports[`Storyshots TaskList With Pinned Tasks 1`] = `
-<storybook-wrapper>
-  <div
-    style="margin: 3em;"
-  >
-    <app-task-list
-      ng-reflect-tasks="[object Object],[object Object"
-    >
-      <div
-        class="list-items"
-      >
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_PINNED list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-6"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-6"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-1"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-1"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-2"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-2"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-3"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-3"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-4"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-4"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        <app-task
-          ng-reflect-task="[object Object]"
-        >
-          <div
-            class="TASK_INBOX list-item"
-          >
-            <label
-              class="checkbox"
-            >
-              <input
-                disabled="true"
-                name="checked"
-                type="checkbox"
-              />
-              <span
-                aria-label="archiveTask-5"
-                class="checkbox-custom"
-              />
-            </label>
-            <div
-              class="title"
-            >
-              <input
-                placeholder="Input title"
-                readonly="true"
-                type="text"
-              />
-            </div>
-            <div
-              class="actions"
-            >
-              <a>
-                <span
-                  aria-label="pinTask-5"
-                  class="icon-star"
-                />
-              </a>
-              
-            </div>
-          </div>
-        </app-task>
-        
-        
-        
-      </div>
-    </app-task-list>
-    
-  </div>
+       press me!
+  
+    </button>
+  </app-button>
 </storybook-wrapper>
 `;

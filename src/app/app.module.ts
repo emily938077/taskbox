@@ -1,25 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { TaskModule } from './components/task.module';
 import { NgxsModule } from '@ngxs/store';
 import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { AppComponent } from './app.component';
-import { InboxScreenComponent } from './components/inbox-screen.component';
-import { PureInboxScreenComponent } from './components/pure-inbox-screen.component';
+import { myButtonComponent } from './mybutton/mybutton.component';
+import { ButtonGroupComponent } from './button-group/button-group.component';
+import { LoginboxComponent } from './loginbox/loginbox.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PureInboxScreenComponent,
-    InboxScreenComponent
+    myButtonComponent,
+    ButtonGroupComponent,
+    LoginboxComponent,
   ],
   imports: [
     BrowserModule,
-    TaskModule,
     NgxsModule.forRoot([]),
     NgxsReduxDevtoolsPluginModule.forRoot(),
-    NgxsLoggerPluginModule.forRoot()
+    NgxsLoggerPluginModule.forRoot(),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

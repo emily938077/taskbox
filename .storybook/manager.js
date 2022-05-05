@@ -22,4 +22,5 @@ addons.setConfig({
     copy: { hidden: false, },
     fullscreen: { hidden: false, },
   },
+  sourceLoaderOptions: null
 });

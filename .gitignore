@@ -44,3 +44,6 @@ build-storybook.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# jest-test
+.jest-test-results.json

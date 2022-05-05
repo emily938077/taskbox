@@ -1,8 +1,20 @@
-<input #inputbox data-testid = "email" value = "write the email" placeholder = 'qqq@mail.com'>
+<!-- <p>{{type}}</p>
+<input
+  name = "input"
+  #inputbox
+  data-testid = "email"
+  [placeholder] = "gettext"
+  [type] = "gettype"
+  (keyup)="onKey(inputbox.value)"
+  >
+<p>{{getinputvalue}}</p>
+<p>error:{{getmessage}}</p> -->
+<app-loginbox #inputbox [cleanbox]="cleanvalue"></app-loginbox>
+
 <app-button
   #button1
   data-testid = "button1"
-  (onClick)="onClean(inputbox)"
+  (click)="onLock()"
   [size]="size1"
   [label]="label1"
   >
@@ -10,7 +22,7 @@
 <app-button
   #button2
   data-testid = "button2"
-  (onClick)="onClean(inputbox.value)"
+  (click)="onClean()"
   [size]="size2"
   [primary]="primary"
   [label]="label2"

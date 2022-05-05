@@ -1,0 +1,13 @@
+<p>{{type}}</p>
+<input
+  name = "inputbox"
+  [(ngModel)]="inputvalue"
+  data-testid = "email"
+  [placeholder] = "gettext"
+  [type] = "gettype"
+  (keyup)="onKey(inputvalue)"
+  >
+<p>{{getinputvalue}}</p>
+<p>error:{{getmessage}}</p>
+<p>cleanbox:{{getcleanbox}}</p>
+

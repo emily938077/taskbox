@@ -5,15 +5,14 @@ import { action } from "@storybook/addon-actions";
 import { screen, userEvent, within } from '@storybook/testing-library';
 import { myButtonComponent } from '../mybutton/mybutton.component';
 import { ButtonGroupComponent } from './button-group.component';
-import { linkTo } from '@storybook/addon-links';
-
+import { LoginboxComponent } from '../loginbox/loginbox.component';
 
 export default {
   title: 'PUBLIC/buttonGroup',
   component: ButtonGroupComponent,
   decorators: [
     moduleMetadata({
-      declarations: [myButtonComponent],
+      declarations: [myButtonComponent,LoginboxComponent],
       imports: [CommonModule],
     }),
   ],
@@ -27,15 +26,15 @@ const Template: Story<ButtonGroupComponent> = (args: ButtonGroupComponent) => ({
   props: args,
 });
 
-export const status1 = Template.bind({});
-status1.args = {
+export const phone = Template.bind({});
+phone.args = {
   label1: "but1",
   label2: "but2",
-  size1: "large"
+  size1: "large",
 };
 
 //canvasElement to scope your element queries to the current story
-status1.play = async ({canvasElement}) => {
+phone.play = async ({canvasElement}) => {
   const canvas = within(canvasElement);
   await new Promise(f => setTimeout(f, 1000));
   userEvent.clear(await within(canvasElement).getByTestId('email'));
@@ -48,6 +47,7 @@ export const status2 = Template.bind({});
 status2.args = {
   label1: "button1",
   label2: "button2",
+  size1: "small"
 };
 status2.play = async ({canvasElement}) => {
   const canvas = within(canvasElement);
@@ -59,11 +59,7 @@ status2.play = async ({canvasElement}) => {
 
 export const status3 = Template.bind({});
 status3.args = {
-  ...status1.args,
+  ...status2.args,
   size2: "small"
 }
-status3.play = async () => {
-  status1.play;
-  status2.play;
-  await userEvent.type(screen.getByTestId('email'), '333@mail.com',{delay:100});
-}
+

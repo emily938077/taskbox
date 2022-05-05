@@ -2,6 +2,8 @@ import { moduleMetadata, Meta, Story } from "@storybook/angular";
 import { CommonModule } from "@angular/common";
 import { action } from '@storybook/addon-actions'
 import { myButtonComponent } from "./mybutton.component";
+// import * as results from '../../../.jest-test-results.json';
+// import { withTests } from '@storybook/addon-jest';
 
 export default{
   component: myButtonComponent,
@@ -10,10 +12,12 @@ export default{
       declarations: [myButtonComponent],
       imports: [CommonModule],
     }),
+    // withTests({ results })
   ],
   title: 'Public/myButton',
   parameters:{
     componentSubtitle:"click and dbclick",
+    jest:['mybutton.component.spec.ts']
   },
   excludeStories: /.*Data$/,
   argTypes: {
@@ -39,8 +43,21 @@ const Template: Story<myButtonComponent> = (args: myButtonComponent) => ({
 
 export const Default = Template.bind({});
 Default.args = {
-  // id: '1',
   label: 'press me!',
+};
+Default.parameters = {
+  jest: 'mybutton.component.spec.js'
+};
+
+//Addon-jest
+export const AppComponentWithJestTests = () => ({
+  props: {},
+});
+
+AppComponentWithJestTests.storyName = 'ButtonComponent with jest tests';
+
+AppComponentWithJestTests.parameters = {
+  jest: 'mybutton.component.spec.ts',
 };
 
 export const Primary = Template.bind({});
@@ -59,7 +76,7 @@ export const Large = Template.bind({});
 Large.parameters = {
   docs: {
     description: {
-      story: 'Story Description'
+      story: '16px'
     }
   },
 };
@@ -82,6 +99,13 @@ Small.args = {
 };
 
 export const Disable = Template.bind({});
+Disable.parameters = {
+  docs: {
+    description: {
+      story: '禁止使用'
+    }
+  },
+};
 Disable.args = {
   ...Default.args,
   disable: true,

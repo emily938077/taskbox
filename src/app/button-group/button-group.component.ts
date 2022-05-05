@@ -1,4 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { myButtonComponent } from '../mybutton/mybutton.component';
+import { LoginboxComponent } from '../loginbox/loginbox.component';
+import { Validators, FormControl, ValidationErrors } from '@angular/forms';
 
 @Component({
   selector: 'app-button-group',
@@ -6,25 +9,23 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./button-group.component.css']
 })
 export class ButtonGroupComponent {
-
   constructor() { }
-
   @Input() label1?: string;
   @Input() label2?: string;
-  @Input() size1: 'small' | 'medium' | 'large' = 'medium';
-  @Input() size2: 'small' | 'medium' | 'large' = 'medium';
-  @Input() backgroundColor?: string;
+  size1: 'small' | 'medium' | 'large' = 'medium';
+  size2: 'small' | 'medium' | 'large' = 'medium';
+  backgroundColor?: string;
   primary = true;
-  @Output() onChange = new EventEmitter<Event>();
-  onClean(input: any){
-    input.value = "";
-    // const state = btother.disable ? 'disable' : 'able';
-    // console.log(btother+state);
-    this.onChange.emit();
+  inputboxvalue?: string;
+  cleanvalue: 'normal' | 'clean' = 'normal';
+
+  onLock(){
+    this.cleanvalue = 'normal';
   }
-  // onChangePmr(bt: any){
-  //   this.primary = !this.primary;
-  //   // console.log(bt+'disable');
-  //   this.onChange.emit(bt.label);
-  // }
+  onClean(){
+    this.cleanvalue = 'clean';
+  }
+  getValue(value: string){
+    this.inputboxvalue = value;
+  }
 }
